@@ -7,33 +7,32 @@ describe('Condition', () => {
     ('%s', (_name, condition, satisfiedValues, notSatifisfiedValues, desc) => {
         it.each(
             satisfiedValues.map(x => [x])
-        )('satisfied by: %s', (value) => {
+        )('satisfied by: %s', value => {
             const result = condition.isSatisfied(value);
 
             if (is.promiseLike(result)) {
                 return expect(result)
                     .resolves
                     .toEqual(true);
-            } else {
-                expect(result)
-                    .toEqual(true);
             }
+
+            expect(result)
+                .toEqual(true);
         });
 
         it.each(
             notSatifisfiedValues.map(x => [x])
-        )('not satisfied by: %s', (value) => {
+        )('not satisfied by: %s', value => {
             const result = condition.isSatisfied(value);
 
             if (is.promiseLike(result)) {
                 return expect(result)
                     .resolves
                     .toEqual(false);
-            } else {
-                expect(result)
-                    .toEqual(false);
             }
-        })
+            expect(result)
+                .toEqual(false);
+        });
 
         it('toString', () => {
             expect(condition.toString())

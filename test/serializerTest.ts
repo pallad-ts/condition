@@ -39,17 +39,16 @@ describe('serializer', () => {
 
         it.each(
             testValues.map(x => [x])
-        )('works the same after serialization and deserialization: %s', async (value) => {
+        )('works the same after serialization and deserialization: %s', async value => {
             const result = newCondition.isSatisfied(value);
             const originalResult = condition.isSatisfied(value);
             if (is.promiseLike(result)) {
                 return expect(result)
                     .resolves
                     .toEqual(await originalResult);
-            } else {
-                expect(result)
-                    .toEqual(originalResult);
             }
+            expect(result)
+                .toEqual(originalResult);
         });
 
         it('remains the same description', () => {

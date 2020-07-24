@@ -14,7 +14,7 @@ describe('ValueExtractor', () => {
                 new ValueExtractor.Property('foo', 'bar'),
                 {
                     foo: {
-                        bar :VALUE_ON_PATH
+                        bar: VALUE_ON_PATH
                     }
                 },
                 'property "foo.bar"'
@@ -61,6 +61,7 @@ describe('ValueExtractor', () => {
 
     it('throw an error when too short path provided', () => {
         expect(() => {
+            // tslint:disable-next-line:no-unused-expression
             new ValueExtractor.Property()
         })
             .toThrowErrorMatchingSnapshot();

@@ -10,7 +10,7 @@ export abstract class ValueExtractor<T> {
 export namespace ValueExtractor {
 
     export class Property<T> extends ValueExtractor<T> {
-        readonly path: (string | symbol)[];
+        readonly path: Array<string | symbol>;
 
         constructor(...path: Property.Path) {
             if (path.length <= 0) {

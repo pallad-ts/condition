@@ -95,7 +95,7 @@ export namespace Condition {
         async isSatisfied(value: any): Promise<boolean> {
             for (const condition of this.conditions) {
                 const result = await condition.isSatisfied(value);
-                if (result === false) {
+                if (!result) {
                     return false;
                 }
             }
@@ -112,7 +112,7 @@ export namespace Condition {
             for (const condition of this.conditions) {
                 const result = await condition.isSatisfied(value);
 
-                if (result === true) {
+                if (result) {
                     return true;
                 }
             }

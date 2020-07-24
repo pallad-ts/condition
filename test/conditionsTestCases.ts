@@ -1,7 +1,7 @@
 import {Condition} from "@src/Condition";
 import {ValueExtractor} from "@src/ValueExtractor";
 
-export const cases: [string, Condition, any[], any[], string][] = [
+export const cases: Array<[string, Condition, any[], any[], string]> = [
     [
         'All',
         new Condition.All(
@@ -151,6 +151,7 @@ export const cases: [string, Condition, any[], any[], string][] = [
     [
         'IsNull',
         new Condition.IsNull(),
+        // tslint:disable-next-line:no-null-keyword
         [null],
         [undefined, {}],
         'is null'
@@ -159,6 +160,7 @@ export const cases: [string, Condition, any[], any[], string][] = [
         'NotNull',
         new Condition.NotNull(),
         [undefined, {}],
+        // tslint:disable-next-line:no-null-keyword
         [null],
         'not null'
     ],
