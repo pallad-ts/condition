@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ValueExtractor throw an error when too short path provided 1`] = `"Property path must be longer than 0"`;

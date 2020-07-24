@@ -1,0 +1,40 @@
+{
+  "name": "@pallad/condition",
+  "version": "1.0.0",
+  "description": "Engine to define condition objects and execute them",
+  "main": "compiled/index.js",
+  "scripts": {
+    "test": "pallad-scripts test",
+    "lint": "pallad-scripts lint",
+    "compile": "pallad-scripts compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallad-ts/condition.git"
+  },
+  "files": [
+    "compiled"
+  ],
+  "keywords": [
+    "condition",
+    "condition",
+    "engine",
+    "predicate"
+  ],
+  "author": "Łukasz Kużyński <lukasz.kuzynski@gmail.com> (http://wookieb.pl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pallad-ts/condition/issues"
+  },
+  "homepage": "https://github.com/pallad-ts/condition#readme",
+  "devDependencies": {
+    "@pallad/scripts": "^1.1.4",
+    "@types/jest": "^24.9.1",
+    "@types/sinon": "^7.5.2",
+    "alpha-serializer": "^0.5.6",
+    "sinon": "^7.5.0"
+  },
+  "dependencies": {
+    "predicates": "^2.0.3"
+  }
+}
