@@ -1,8 +1,9 @@
 {
   "name": "@pallad/condition",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Engine to define condition objects and execute them",
   "main": "compiled/index.js",
+  "types": "compiled/index.d.ts",
   "scripts": {
     "test": "pallad-scripts test",
     "lint": "pallad-scripts lint",
