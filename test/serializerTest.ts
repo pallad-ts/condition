@@ -31,6 +31,11 @@ describe('serializer', () => {
             );
         });
 
+        it('snapshot', () => {
+            expect(serializer.serialize(condition))
+                .toMatchSnapshot();
+        })
+
         it('has proper serialized name', () => {
             const result = serializer.normalizer.normalize(condition);
             expect(result['@type'])

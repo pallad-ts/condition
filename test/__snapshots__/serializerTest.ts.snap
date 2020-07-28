@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`serializer Condition/All snapshot 1`] = `"{\\"@type\\":\\"Condition/All\\",\\"value\\":[{\\"@type\\":\\"Condition/Contains\\",\\"value\\":[\\"foo\\"]},{\\"@type\\":\\"Condition/Contains\\",\\"value\\":[\\"bar\\"]}]}"`;
+
+exports[`serializer Condition/Any snapshot 1`] = `"{\\"@type\\":\\"Condition/Any\\",\\"value\\":[{\\"@type\\":\\"Condition/Contains\\",\\"value\\":[\\"foo\\"]},{\\"@type\\":\\"Condition/Contains\\",\\"value\\":[\\"bar\\"]}]}"`;
+
+exports[`serializer Condition/Contains snapshot 1`] = `"{\\"@type\\":\\"Condition/Contains\\",\\"value\\":[\\"foo\\"]}"`;
+
+exports[`serializer Condition/Contains snapshot 2`] = `"{\\"@type\\":\\"Condition/Contains\\",\\"value\\":[\\"foo\\",true]}"`;
+
+exports[`serializer Condition/DoesNotContain snapshot 1`] = `"{\\"@type\\":\\"Condition/DoesNotContain\\",\\"value\\":[\\"foo\\"]}"`;
+
+exports[`serializer Condition/DoesNotContain snapshot 2`] = `"{\\"@type\\":\\"Condition/DoesNotContain\\",\\"value\\":[\\"foo\\",true]}"`;
+
+exports[`serializer Condition/DoesNotMatch snapshot 1`] = `"{\\"@type\\":\\"Condition/DoesNotMatch\\",\\"value\\":[\\"a{1,2}\\",\\"\\"]}"`;
+
+exports[`serializer Condition/EndsWith snapshot 1`] = `"{\\"@type\\":\\"Condition/EndsWith\\",\\"value\\":[\\"foo\\"]}"`;
+
+exports[`serializer Condition/EndsWith snapshot 2`] = `"{\\"@type\\":\\"Condition/EndsWith\\",\\"value\\":[\\"foo\\",true]}"`;
+
+exports[`serializer Condition/Equal snapshot 1`] = `"{\\"@type\\":\\"Condition/Equal\\",\\"value\\":[10]}"`;
+
+exports[`serializer Condition/GreaterThan snapshot 1`] = `"{\\"@type\\":\\"Condition/GreaterThan\\",\\"value\\":[10]}"`;
+
+exports[`serializer Condition/GreaterThanOrEqual snapshot 1`] = `"{\\"@type\\":\\"Condition/GreaterThanOrEqual\\",\\"value\\":[10]}"`;
+
+exports[`serializer Condition/In snapshot 1`] = `"{\\"@type\\":\\"Condition/In\\",\\"value\\":[[1,2]]}"`;
+
+exports[`serializer Condition/IsNull snapshot 1`] = `"{\\"@type\\":\\"Condition/IsNull\\",\\"value\\":{}}"`;
+
+exports[`serializer Condition/LessThan snapshot 1`] = `"{\\"@type\\":\\"Condition/LessThan\\",\\"value\\":[10]}"`;
+
+exports[`serializer Condition/LessThanOrEqual snapshot 1`] = `"{\\"@type\\":\\"Condition/LessThanOrEqual\\",\\"value\\":[10]}"`;
+
+exports[`serializer Condition/Matches snapshot 1`] = `"{\\"@type\\":\\"Condition/Matches\\",\\"value\\":[\\"a{1,2}\\",\\"\\"]}"`;
+
+exports[`serializer Condition/NotEqual snapshot 1`] = `"{\\"@type\\":\\"Condition/NotEqual\\",\\"value\\":[10]}"`;
+
+exports[`serializer Condition/NotIn snapshot 1`] = `"{\\"@type\\":\\"Condition/NotIn\\",\\"value\\":[[1,2]]}"`;
+
+exports[`serializer Condition/NotNull snapshot 1`] = `"{\\"@type\\":\\"Condition/NotNull\\",\\"value\\":{}}"`;
+
+exports[`serializer Condition/OnValueExtractor snapshot 1`] = `"{\\"@type\\":\\"Condition/OnValueExtractor\\",\\"value\\":[{\\"@type\\":\\"ValueExtractor/Property\\",\\"value\\":[\\"test\\"]},{\\"@type\\":\\"Condition/Equal\\",\\"value\\":[10]}]}"`;
+
+exports[`serializer Condition/StartsWith snapshot 1`] = `"{\\"@type\\":\\"Condition/StartsWith\\",\\"value\\":[\\"foo\\"]}"`;
+
+exports[`serializer Condition/StartsWith snapshot 2`] = `"{\\"@type\\":\\"Condition/StartsWith\\",\\"value\\":[\\"foo\\",true]}"`;

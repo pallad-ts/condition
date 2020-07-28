@@ -1,13 +1,14 @@
 {
   "name": "@pallad/condition",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Engine to define condition objects and execute them",
   "main": "compiled/index.js",
   "types": "compiled/index.d.ts",
   "scripts": {
     "test": "pallad-scripts test",
     "lint": "pallad-scripts lint",
-    "compile": "pallad-scripts compile"
+    "compile": "pallad-scripts compile",
+    "prepublishOnly": "npm run compile"
   },
   "repository": {
     "type": "git",
