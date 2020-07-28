@@ -89,6 +89,10 @@ export namespace Condition {
         protected conditionsToString() {
             return this.conditions.map(x => x.toString()).join(', ');
         }
+
+        [NORMALIZE]() {
+            return this.conditions;
+        }
     }
 
     export class All<T> extends Aggregation<T> {
@@ -104,6 +108,10 @@ export namespace Condition {
 
         toString(): string {
             return `All conditions meet: ${this.conditionsToString()}`;
+        }
+
+        static [DENORMALIZE](conditions: Condition[]) {
+            return new All(...conditions);
         }
     }
 
@@ -121,6 +129,10 @@ export namespace Condition {
 
         toString() {
             return `Any condition meet: ${this.conditionsToString()}`;
+        }
+
+        static [DENORMALIZE](conditions: Condition[]) {
+            return new Any(...conditions);
         }
     }
 
